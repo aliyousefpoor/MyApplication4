@@ -53,7 +53,7 @@ public class RecViewAdapter extends RecyclerView.Adapter<ViewHolder> {
                 SingleFragment singleFragment = new SingleFragment();
 
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.frame_layout,singleFragment);
+                transaction.replace(R.id.frame_layout,singleFragment).addToBackStack(null);
                 transaction.commit();
 
                 Bundle bundle = new Bundle();
